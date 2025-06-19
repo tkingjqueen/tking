@@ -208,9 +208,6 @@ h4 {
     color: #b9a06c;
 }
 
-/* ...existing code... */
-
-/* 王室家族布局与头像样式 */
 .royal-family-gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -233,7 +230,6 @@ h4 {
     margin-bottom: 1rem;
 }
 
-/* 响应式：小屏幕下每行1-2个 */
 @media (max-width: 900px) {
     .royal-family-gallery {
         grid-template-columns: repeat(2, 1fr);
@@ -246,8 +242,6 @@ h4 {
     }
 }
 
-/*
-/* 响应式设计 */
 @media (max-width: 768px) {
     h1 {
         font-size: 2.5rem;
@@ -271,7 +265,6 @@ h4 {
     }
 }
 
-/* 添加以下规则确保所有页面样式一致 */
 body.royalty-page .royal-content,
 body.affairs-page .royal-content,
 body.diplomacy-page .royal-content,
@@ -282,7 +275,6 @@ body.about-page .royal-content {
     box-shadow: 0 0 30px rgba(212, 175, 55, 0.2);
 }
 
-/* 确保所有页面都应用基础样式 */
 body.royalty-page,
 body.affairs-page,
 body.diplomacy-page,
@@ -291,5 +283,31 @@ body.about-page {
     background-color: #1a120b;
     color: #e6d8b5;
     background-image: url('/images/parchment-texture.jpg');
-    /* 其他基础样式... */
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background: #fff8e1;
+    box-shadow: 0 0 16px #bfa03a;
+    font-family: 'Times New Roman', serif;
+    color: #3a2c06;
+}
+.schedule-table th, .schedule-table td {
+    border: 2px solid #bfa03a;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    font-size: 1.1em;
+}
+.schedule-table th {
+    background: #ffe082;
+    color: #3a2c06;
+    font-weight: bold;
+}
+.schedule-table tr:nth-child(even) {
+    background: #ffecb3;
+}
+.schedule-table tr:hover {
+    background: #ffe082;
 }
