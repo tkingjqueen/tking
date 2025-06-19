@@ -1,0 +1,295 @@
+/* 基础样式 */
+body {
+    font-family: 'Goudy Old Style', 'Times New Roman', serif;
+    background-color: #1a120b;
+    color: #e6d8b5;
+    background-image: url('../images/parchment-texture.jpg');
+    background-attachment: fixed;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* 皇家头部样式 */
+.royal-header {
+    text-align: center;
+    padding: 2rem 0;
+    background: linear-gradient(to bottom, #1a120b 0%, #3a2a16 100%);
+    border-bottom: 3px solid #d4af37;
+    position: relative;
+}
+
+.coat-of-arms img {
+    height: 120px;
+    filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.7));
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: #d4af37;
+    text-shadow: 2px 2px 4px #000, 0 0 10px rgba(212, 175, 55, 0.5);
+    margin: 0.5rem 0;
+    letter-spacing: 3px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.motto {
+    font-style: italic;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    color: #b9a06c;
+    text-shadow: 1px 1px 2px #000;
+}
+
+/* 导航菜单 */
+.royal-navigation {
+    background: rgba(26, 18, 11, 0.9);
+    padding: 1rem;
+    border-bottom: 1px solid #d4af37;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.royal-navigation ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.royal-navigation li {
+    margin: 0 1.5rem;
+}
+
+.royal-navigation a {
+    color: #d4af37;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0.5rem 1rem;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+    font-family: 'Trajan Pro', serif;
+}
+
+.royal-navigation a:hover {
+    border: 1px solid #d4af37;
+    background: rgba(212, 175, 55, 0.1);
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.7);
+}
+
+/* 内容区域 */
+.royal-content {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+.parchment {
+    background: rgba(230, 216, 181, 0.05);
+    border: 1px solid #d4af37;
+    padding: 2rem;
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.2);
+    position: relative;
+    border-radius: 5px;
+}
+
+.parchment:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../images/parchment-overlay.png');
+    opacity: 0.1;
+    pointer-events: none;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #d4af37;
+    font-size: 2.5rem;
+    border-bottom: 2px solid #d4af37;
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+    font-weight: normal;
+    font-style: italic;
+    text-shadow: 1px 1px 2px #000;
+}
+
+h3 {
+    color: #b9a06c;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    font-weight: normal;
+}
+
+h4 {
+    color: #b9a06c;
+    font-size: 1.4rem;
+    font-weight: normal;
+}
+
+/* 皇家列表样式 */
+.royal-list {
+    list-style-type: none;
+    padding-left: 2rem;
+}
+
+.royal-list li {
+    position: relative;
+    margin-bottom: 0.7rem;
+    padding-left: 2rem;
+    font-size: 1.1rem;
+}
+
+.royal-list li:before {
+    content: "✦";
+    color: #d4af37;
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+}
+
+/* 引用样式 */
+.royal-quote {
+    font-style: italic;
+    border-left: 3px solid #d4af37;
+    padding-left: 2rem;
+    margin: 2rem 0;
+    color: #b9a06c;
+    font-size: 1.2rem;
+}
+
+.royal-quote footer {
+    font-style: normal;
+    text-align: right;
+    margin-top: 0.5rem;
+    color: #d4af37;
+    font-size: 1rem;
+}
+
+/* 页脚样式 */
+.royal-footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: linear-gradient(to bottom, #3a2a16 0%, #1a120b 100%);
+    border-top: 1px solid #d4af37;
+    font-size: 0.9rem;
+    color: #b9a06c;
+    margin-top: 2rem;
+}
+
+/* 特殊页面样式 */
+.homepage .royal-proclamation {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.signature {
+    font-family: 'Blackadder ITC', 'Brush Script MT', cursive;
+    font-size: 2rem;
+    color: #d4af37;
+    text-align: right;
+    margin-top: 1.5rem;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.date {
+    text-align: right;
+    font-style: italic;
+    color: #b9a06c;
+}
+
+/* ...existing code... */
+
+/* 王室家族布局与头像样式 */
+.royal-family-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.family-member {
+    text-align: center;
+}
+
+.family-portrait {
+    width: 100%;
+    max-width: 180px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 2px solid #d4af37;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+    margin-bottom: 1rem;
+}
+
+/* 响应式：小屏幕下每行1-2个 */
+@media (max-width: 900px) {
+    .royal-family-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .royal-family-gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+/*
+/* 响应式设计 */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .royal-navigation li {
+        margin: 0 0.5rem;
+    }
+
+    .royal-navigation a {
+        font-size: 1rem;
+        padding: 0.3rem 0.5rem;
+    }
+
+    .royal-content {
+        padding: 0 1rem;
+    }
+
+    .family-member {
+        width: calc(50% - 0.75rem);
+    }
+}
+
+/* 添加以下规则确保所有页面样式一致 */
+body.royalty-page .royal-content,
+body.affairs-page .royal-content,
+body.diplomacy-page .royal-content,
+body.about-page .royal-content {
+    padding: 2rem;
+    background: rgba(230, 216, 181, 0.05);
+    border: 1px solid #d4af37;
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.2);
+}
+
+/* 确保所有页面都应用基础样式 */
+body.royalty-page,
+body.affairs-page,
+body.diplomacy-page,
+body.about-page {
+    font-family: 'Goudy Old Style', 'Times New Roman', serif;
+    background-color: #1a120b;
+    color: #e6d8b5;
+    background-image: url('/images/parchment-texture.jpg');
+    /* 其他基础样式... */
+}
