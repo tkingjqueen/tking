@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>臣民谏言 - T_KING王国</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .bear-icon {
+            height: 80px;
+            margin-bottom: 1rem;
+            filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.7));
+        }
+    </style>
+</head>
+
+<body class="advice-page">
+    <header class="royal-header">
+        <img src="../images/bear-icon.png" alt="皇家熊徽" class="bear-icon">
+        <h1>T_KING王国</h1>
+        <p class="motto">"荣耀与智慧指引前路"</p>
+    </header>
+
+    <nav class="royal-navigation">
+        <ul>
+            <li><a href="../about/index.html">王国简介</a></li>
+            <li><a href="../royalty/index.html">王室成员</a></li>
+            <li><a href="../affairs/index.html">国家事务</a></li>
+            <li><a href="../diplomacy/index.html">外交事务</a></li>
+            <li><a href="../advice/index.html">臣民谏言</a></li>
+        </ul>
+    </nav>
+
+    <main class="royal-content">
+        <article class="parchment">
+            <h2>臣民谏言</h2>
+            <p>在T_KING王国，每一位臣民的声音都值得被聆听。无论是对王国发展的建议、对生活的美好畅想，还是对陛下的祝福与寄语，皆可在此表达。您的每一条谏言，都是王国进步的宝贵动力！</p>
+            
+            <section class="royal-comments">
+                <h3>谏言集锦</h3>
+                <ul class="royal-list">
+                    <li>希望王国能举办更多梦幻节日，让大家共同庆祝奇迹时刻。</li>
+                    <li>建议设立“幻想学堂”，让臣民们学习魔法与创造力课程。</li>
+                    <li>愿王国永远充满欢笑与温暖，祝陛下万事如意！</li>
+                    <li>希望能有更多关于皇家成员的趣闻轶事分享。</li>
+                    <li>建议开放“梦想桃”采摘日，让大家体验收获的乐趣。</li>
+                </ul>
+                <blockquote class="royal-quote">
+                    “每一份谏言，都是王国成长的种子。”
+                    <footer>—— T_KING陛下</footer>
+                </blockquote>
+            </section>
+
+            <section>
+                <h3>我要进言</h3>
+                <p>欢迎您在下方留言，提出宝贵建议或表达心声：</p>
+                <!-- 你可以集成第三方评论系统，如Disqus，或用静态留言板占位 -->
+                <div id="disqus_thread"></div>
+                <script>
+                    var disqus_config = function () {
+                        this.page.url = window.location.href;
+                        this.page.identifier = "advice";
+                    };
+                    (function () {
+                        var d = document, s = d.createElement('script');
+                        s.src = 'https://tking.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                    })();
+                </script>
+                <noscript>请开启JavaScript以查看评论区。</noscript>
+            </section>
+        </article>
+    </main>
+
+    <footer class="royal-footer">
+        <p>© 幻梦纪元2025年 T_KING王国皇家理事会 版权所有</p>
+        <p>皇家梦想院监制</p>
+    </footer>
+</body>
+</html>

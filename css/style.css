@@ -311,3 +311,23 @@ body.about-page {
 .schedule-table tr:hover {
     background: #ffe082;
 }
+
+/* 评论区样式 */
+.royal-comments {
+    margin-top: 3rem;
+    padding: 2rem;
+    background: rgba(20, 15, 5, 0.7);
+    border-top: 1px solid #d4af37;
+}
+
+.royal-comments h3 {
+    color: #d4af37;
+    font-family: 'Trajan Pro', serif;
+    border-bottom: 1px dashed #d4af37;
+    padding-bottom: 0.5rem;
+}
+
+/* Disqus适配 */
+#disqus_thread iframe {
+    color-scheme: light; /* 强制亮色模式 */
+}
