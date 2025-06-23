@@ -331,3 +331,45 @@ body.about-page {
 #disqus_thread iframe {
     color-scheme: light; /* 强制亮色模式 */
 }
+
+/* ...existing code... */
+
+/* 我要进言部分美化 */
+.parchment section:last-of-type {
+    background: rgba(30, 22, 10, 0.92);
+    border: 1.5px solid #d4af37;
+    border-radius: 8px;
+    margin-top: 2.5rem;
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    box-shadow: 0 0 16px rgba(212, 175, 55, 0.15);
+}
+
+.parchment section:last-of-type h3 {
+    color: #d4af37;
+    font-family: 'Trajan Pro', serif;
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    border-bottom: 1px dashed #d4af37;
+    padding-bottom: 0.5rem;
+    text-shadow: 0 0 8px #000;
+}
+
+.parchment section:last-of-type p {
+    color: #e6d8b5;
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+    text-shadow: 0 0 4px #000;
+}
+
+#disqus_thread {
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 6px;
+    padding: 1rem 0.5rem;
+    margin-top: 1rem;
+    color-scheme: light;
+    /* 让Disqus内容更突出 */
+    box-shadow: 0 0 8px rgba(212, 175, 55, 0.08);
+}
+
+/* ...existing code... */
